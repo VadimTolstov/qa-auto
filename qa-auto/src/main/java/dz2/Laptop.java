@@ -1,3 +1,5 @@
+package dz2;
+
 public class Laptop {
     String brand;
     int price;

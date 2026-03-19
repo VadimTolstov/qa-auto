@@ -1,3 +1,5 @@
+package dz2;
+
 public class Car {
     String brand;
     int year;

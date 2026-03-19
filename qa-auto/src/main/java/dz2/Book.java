@@ -1,3 +1,5 @@
+package dz2;
+
 public class Book {
     String title;
     String author;

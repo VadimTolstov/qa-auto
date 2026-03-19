@@ -1,3 +1,5 @@
+package dz2;
+
 public class MathOperations {
 
     public static void main(String[] arg) {

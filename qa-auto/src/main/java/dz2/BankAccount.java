@@ -1,3 +1,5 @@
+package dz2;
+
 public class BankAccount {
     String owner;
     int balance;

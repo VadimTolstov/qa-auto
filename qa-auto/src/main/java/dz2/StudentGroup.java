@@ -1,3 +1,5 @@
+package dz2;
+
 public class StudentGroup {
     String groupName;
     String studentCount;

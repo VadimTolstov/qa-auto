@@ -1,3 +1,5 @@
+package dz2;
+
 public class Teacher {
     String name;
     String subject;
