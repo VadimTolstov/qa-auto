@@ -1,4 +1,4 @@
-package dz2;
+package hw2;
 
 public class Laptop {
     String brand;
