@@ -1,13 +1,17 @@
 package hw3;
 
 public class University {
-    static String universityName;
+    static String universityName = "ДВГУПС";
     final int studentId;
     String studentName;
 
     public University(int studentId, String studentName) {
         this.studentId = studentId;
         this.studentName = studentName;
+    }
+
+    public static String getUniversityName() {
+        return universityName;
     }
 
     public static void changeUniversityName(String newName) {
