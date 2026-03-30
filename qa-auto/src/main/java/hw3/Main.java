@@ -12,8 +12,16 @@ public class Main {
 
         System.out.println(MathConstants.calculateExponentialGrowth(1, 1, 2));
         Library library = new Library();
+        library.setBookTitle("Война и мир");
+        library.setAuthor("Пушкин");
+        library.setCategory("Вау");
+        library.setYear(321);
         System.out.println(library.category);
         System.out.println(library.year);
+        System.out.println(library.getBookTitle());
+        System.out.println(library.getAuthor());
+        System.out.println(library.getCategory());
+        System.out.println(library.getYear());
 
         University university = new University(1, "Валера");
         University university2 = new University(2, "Света");
