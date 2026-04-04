@@ -14,10 +14,10 @@ public class WhileTask {
     static void factorial() {
         System.out.println("Введите число: ");
         final int number = scanner.nextInt();
-        int factorial = 0;
+        int factorial = 1;
         int i = 1;
         while (i <= number) {
-            factorial = factorial + i;
+            factorial = factorial * i;
             i++;
         }
         System.out.println(factorial);
