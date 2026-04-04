@@ -8,6 +8,8 @@ public class Main {
 
         Rectangle rectangle = new Rectangle(10,5);
         System.out.println(rectangle.calculateArea());
+        rectangle.setWidth(30);
+        System.out.println(rectangle.calculateArea());
 
         Book book = new Book("Война и мир ", "Лев Толстой");
         book.setAuthor("Пушкин");
@@ -21,9 +23,11 @@ public class Main {
 
         Point point = new Point(10, 15);
         point.print();
+        point.setX(30);
+        point.print();
 
-        StudentGroup a = new StudentGroup("A", "10");
-        a.setStudentCount("12");
+        StudentGroup a = new StudentGroup("A", 10);
+        a.setStudentCount(12);
         a.printInfo();
 
         Circle c = new Circle(5);
@@ -36,9 +40,9 @@ public class Main {
         teacher.printInfo();
 
         Product product = new Product("Ручка", 100.0);
-        product.setPrice(11.11);
+        product.setPrice(100);
         product.printInfo();
-        product.applyDiscount(0.11);
+        product.applyDiscount(10);
         product.printInfo();
 
         Laptop laptop = new Laptop("Ноут", 100);

@@ -22,10 +22,10 @@ public class Product {
     }
 
     public void applyDiscount(double discount) {
-        this.price = price - discount;
+        this.price = price - price / 100 * discount;
     }
 
     public void printInfo() {
-        System.out.println("товаре " + name + " и цене " + price);
+        System.out.println("Название товара " + name + "  цена " + price);
     }
 }

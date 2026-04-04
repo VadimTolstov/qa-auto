@@ -26,6 +26,6 @@ public class Book {
     }
 
     public void printInfo() {
-        System.out.println("Название " + title + " автора книги " + author);
+        System.out.println("Название " + title + " автор книги " + author);
     }
 }

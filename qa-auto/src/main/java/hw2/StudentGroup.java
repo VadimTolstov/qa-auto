@@ -2,9 +2,9 @@ package hw2;
 
 public class StudentGroup {
     String groupName;
-    String studentCount;
+    int studentCount;
 
-    public StudentGroup(String groupName, String studentCount) {
+    public StudentGroup(String groupName, int studentCount) {
         this.groupName = groupName;
         this.studentCount = studentCount;
     }
@@ -17,15 +17,15 @@ public class StudentGroup {
         this.groupName = groupName;
     }
 
-    public String getStudentCount() {
+    public int getStudentCount() {
         return studentCount;
     }
 
-    public void setStudentCount(String studentCount) {
+    public void setStudentCount(int studentCount) {
         this.studentCount = studentCount;
     }
 
     public void printInfo() {
-        System.out.println("Группа " + groupName + " количестве студентов = " + studentCount);
+        System.out.println("Группа " + groupName + " количество студентов = " + studentCount);
     }
 }
