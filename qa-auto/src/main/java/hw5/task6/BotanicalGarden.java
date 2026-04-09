@@ -1,7 +1,7 @@
 package hw5.task6;
 
 public class BotanicalGarden {
-    private final Plant plant;
+    private  Plant plant;
 
     public BotanicalGarden(Plant plant) {
         this.plant = plant;
@@ -9,5 +9,9 @@ public class BotanicalGarden {
 
     public void maintainPlant() {
         plant.care();
+    }
+
+    public void setPlant(Plant plant) {
+        this.plant = plant;
     }
 }

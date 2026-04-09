@@ -1,7 +1,7 @@
 package hw5.task5;
 
 public class Farm {
-    private final FarmAnimal farmAnimal;
+    private  FarmAnimal farmAnimal;
 
     public Farm(FarmAnimal farmAnimal) {
         this.farmAnimal = farmAnimal;
@@ -14,4 +14,6 @@ public class Farm {
     public void collectProducts() {
         farmAnimal.products();
     }
+
+
 }

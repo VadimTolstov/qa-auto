@@ -2,7 +2,9 @@ package hw5.task7;
 
 public class Main {
     public static void main(String[] args) {
-        new AmusementPark(new Carousel()).operateAttraction();
-        new AmusementPark(new RollerCoaster()).operateAttraction();
+        final AmusementPark amusementPark = new AmusementPark(new Carousel());
+        amusementPark.operateAttraction();
+        amusementPark.setAttraction(new RollerCoaster());
+        amusementPark.operateAttraction();
     }
 }

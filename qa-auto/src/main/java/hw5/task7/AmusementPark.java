@@ -1,7 +1,7 @@
 package hw5.task7;
 
 public class AmusementPark {
-    private final Attraction attraction;
+    private  Attraction attraction;
 
     public AmusementPark(Attraction attraction) {
         this.attraction = attraction;
@@ -10,5 +10,9 @@ public class AmusementPark {
     public void operateAttraction() {
         attraction.info();
         attraction.maintain();
+    }
+
+    public void setAttraction(Attraction attraction) {
+        this.attraction = attraction;
     }
 }

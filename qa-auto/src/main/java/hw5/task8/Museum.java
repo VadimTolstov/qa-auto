@@ -1,14 +1,18 @@
 package hw5.task8;
 
 public class Museum {
-    private final Exhibit exhibit;
+    private  Exhibit exhibit;
 
     public Museum(Exhibit exhibit) {
         this.exhibit = exhibit;
     }
 
     public void showExhibit(){
-        exhibit.preserve();
         exhibit.describe();
+        exhibit.preserve();
+    }
+
+    public void setExhibit(Exhibit exhibit) {
+        this.exhibit = exhibit;
     }
 }

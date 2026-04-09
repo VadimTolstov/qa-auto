@@ -1,7 +1,7 @@
 package hw5.task4;
 
 public class Aquarium {
-    private final SeaCreature seaCreature;
+    private  SeaCreature seaCreature;
 
     public Aquarium(SeaCreature seaCreature) {
         this.seaCreature = seaCreature;
@@ -9,5 +9,9 @@ public class Aquarium {
 
     public void demonstration(){
         seaCreature.move();
+    }
+
+    public void setSeaCreature(SeaCreature seaCreature) {
+        this.seaCreature = seaCreature;
     }
 }
