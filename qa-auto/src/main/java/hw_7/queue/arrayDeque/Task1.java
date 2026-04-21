@@ -2,8 +2,6 @@ package hw_7.queue.arrayDeque;
 
 import java.util.ArrayDeque;
 import java.util.Deque;
-import java.util.PriorityQueue;
-import java.util.Queue;
 
 /*
 Задача 2:
@@ -17,13 +15,18 @@ public class Task1 {
     }
 
     public void addIntInStack(Integer number) {
-        integerStack.add(number);
+        integerStack.push(number);
     }
 
-    public void get(){
+    public void get() {
         System.out.println(integerStack);
     }
+
     public void getAndRemoveLastElement() {
-        System.out.println(integerStack. pollFirst());
+        System.out.println(
+                !integerStack.isEmpty()
+                        ? integerStack.pop()
+                        : "Стек пуст"
+        );
     }
 }

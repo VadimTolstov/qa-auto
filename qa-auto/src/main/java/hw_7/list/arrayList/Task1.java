@@ -13,7 +13,7 @@ public class Task1 {
     public Task1() {
         this.list = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
-            list.add(i);
+            list.add((int) (Math.random() * 10) + 1);
         }
     }
 

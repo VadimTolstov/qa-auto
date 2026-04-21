@@ -19,6 +19,10 @@ public class Task1 {
     }
 
     public void getValueByKey(String userName) {
-        System.out.println(userNameAndPhoneNumberLinkedHashMap.get(userName));
+        System.out.println(
+                !userNameAndPhoneNumberLinkedHashMap.isEmpty()
+                        ? userNameAndPhoneNumberLinkedHashMap.get(userName)
+                        : "LinkedHashMap пуст"
+        );
     }
 }

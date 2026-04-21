@@ -20,17 +20,17 @@ public class CheckingCorrectnessParenthesisSequence {
             switch (ch) {
                 case '{', '[', '(' -> stringStack.add(ch);
                 case '}' -> {
-                    if (stringStack.getLast() == ('{')) {
+                    if (!stringStack.isEmpty() && stringStack.getLast() == '{') {
                         stringStack.removeLast();
                     }
                 }
                 case ']' -> {
-                    if (stringStack.getLast() == ('[')) {
+                    if (!stringStack.isEmpty() && stringStack.getLast() == '[') {
                         stringStack.removeLast();
                     }
                 }
                 case ')' -> {
-                    if (stringStack.getLast() == ('(')) {
+                    if (!stringStack.isEmpty() && stringStack.getLast() == '(') {
                         stringStack.removeLast();
                     }
                 }

@@ -1,10 +1,11 @@
 package hw_7.set.hashSet;
 
+import java.util.List;
+
 public class HashSetMain {
     public static void main(String[] args) {
-//        final List<String> stringList = List.of("Привет", "Пока", "Привет", "Как дела", "Пока");
-//        final Task1 task1 = new Task1();
-//        System.out.println(task1.convertListToSet(stringList));
+
+        System.out.println(Task1.convertListToSet(List.of("Привет", "Пока", "Привет", "Как дела", "Пока")));
 
         final Task2 task2 = new Task2();
 

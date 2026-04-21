@@ -18,6 +18,6 @@ public class Task1 {
     }
 
     public void printUserRatingTreeMap() {
-        System.out.println(userRatingTreeMap);
+        userRatingTreeMap.entrySet().forEach(System.out::println);
     }
 }

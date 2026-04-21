@@ -19,6 +19,10 @@ public class Task1 {
     }
 
     public void removeNumber() {
-        System.out.println(integerQueue.poll());
+        System.out.println(
+                !integerQueue.isEmpty()
+                        ? integerQueue.poll()
+                        : "PriorityQueue пуст"
+        );
     }
 }
