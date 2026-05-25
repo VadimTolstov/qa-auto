@@ -2,7 +2,6 @@ package hw8.exceptions;
 
 import hw8.exceptions.ex.InvalidAddressException;
 
-import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 /**
@@ -19,12 +18,9 @@ public class Task4 {
             throw new InvalidAddressException("Адрес не может быть пустым");
         }
 
-        Matcher matcher = EMAIL_PATTERN.matcher(mail);
-
-        if (!matcher.matches()) {
+        if (!EMAIL_PATTERN.matcher(mail).matches()) {
             throw new InvalidAddressException("Некорректный адрес: " + mail);
         }
-
         System.out.println("Адрес корректный: " + mail);
     }
 }

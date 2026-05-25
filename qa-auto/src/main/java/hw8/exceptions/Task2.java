@@ -7,6 +7,10 @@ package hw8.exceptions;
 public class Task2 {
 
     public void division(int a, int b) {
+        if (b == 0) {
+            System.out.println("На ноль делить нельзя");
+            return;
+        }
         try {
             System.out.println(a + "/" + b + "=" + a / b);
         } catch (ArithmeticException e) {
