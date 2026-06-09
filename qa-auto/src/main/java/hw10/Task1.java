@@ -15,7 +15,7 @@ public class Task1 {
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException e) {
-                    Thread.interrupted();
+                    Thread.currentThread().interrupt();
                     throw new RuntimeException(e);
                 }
             }

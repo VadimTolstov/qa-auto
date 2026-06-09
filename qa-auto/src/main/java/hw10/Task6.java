@@ -58,7 +58,7 @@ public class Task6 {
             int countFact = 0;
             for (int i = 0; i < count; i++) {
                 int index = startIndex + i;
-                sum = sum + list.get(i);
+                sum = sum + list.get(index);
                 countFact++;
                 System.out.println(
                         Thread.currentThread().getName() +
